@@ -8,9 +8,9 @@ export default defineNuxtConfig({
         scss: {
           api: 'modern-compiler', // or "modern"
           additionalData: `
-            @use 'sass:math';
-            @use 'sass:color';
-            @use 'sass:map';
+            @use "sass:math" as *;
+            @use "sass:color" as *;
+            @use "sass:map" as *;
             @use "@/assets/scss/_functions.scss" as *;
             @use "@/assets/scss/_variables.scss" as *;
             @use "@/assets/scss/_mixins.scss" as *;

@@ -9,7 +9,7 @@ header.header {
   display: flex;
   .logo-container {
     display: block;
-    max-width: 150px;
+    max-width: rem(175);
     img {
       width: 100%;
       height: auto;

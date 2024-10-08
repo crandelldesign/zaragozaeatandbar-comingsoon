@@ -2,20 +2,24 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint',
-  ],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler', // or "modern"
           additionalData: `
-            @import "@/assets/scss/_functions.scss";
-            @import "@/assets/scss/_variables.scss";
-            @import "@/assets/scss/_mixins.scss";
+            @use "@/assets/scss/_functions.scss" as *;
+            @use "@/assets/scss/_variables.scss" as *;
+            @use "@/assets/scss/_mixins.scss" as *;
           `
         }
       }
     },
   },
+  modules: ["@nuxt/eslint"],
+  eslint: {
+    config: {
+      stylistic: true // <---
+    }
+  }
 })

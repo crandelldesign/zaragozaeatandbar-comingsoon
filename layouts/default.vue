@@ -1,7 +1,11 @@
+<script setup>
+const isComingSoon = ref(true);
+</script>
+
 <template>
-  <div>
-    <AppHeader />
+  <div class="layout-container">
+    <AppHeader v-if="!isComingSoon" />
     <slot />
-    <AppFooter />
+    <AppFooter v-if="!isComingSoon" />
   </div>
 </template>

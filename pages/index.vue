@@ -4,22 +4,27 @@
       <img src="@/assets/img/logo.jpg" alt="Zaragoza" />
     </header>
     <address class="address-banner">
-      <IconMarker /> 2000 Brush St, Detroit, MI 48226
+      <IconMarker /> 8111 Long Point Rd, Houston, TX 77055
     </address>
     <main>
       <section class="section-intro">
-        <h1>A Slogan or Brief Heading</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h1>Focusing on local reciple for Spanish dishes</h1>
+        <p class="lead">Zaragoza Restaurant is a Spanish restaurant focusing on local dishes for the Spanish speaking people.</p>
       </section>
       <section class="section-contact">
-        <h2>Contact Us</h2>
-        <div><a href="tel:1234567890">123-456-7890</a></div>
+        <h2>Contact us</h2>
+        <p class="lead"><a href="tel:1234567890">662-382-8409</a></p>
+        <p class="lead"><a href="mailto:CarlostabSantana@outlook.com">CarlostabSantana@outlook.com</a></p>
       </section>
       <section class="section-hours">
         <h2>Hours</h2>
-        <p>Tuesday to Thursday 4PM-9PM<br />
-          Friday & Saturday 4PM - 10PM<br />
-          Sunday 11AM-9PM</p>
+        <p>Monday 11AM - 7PM<br >
+          Tuesday 11AM - 8PM<br />
+          Wednesday 11AM - 8PM<br />
+          Thursday 11AM - 10PM<br />
+          Friday 10AM - MIDNIGHT<br />
+          Saturday 10AM - 11PM<br />
+          Sunday 11AM - 10PM</p>
       </section>
     </main>
   </div>
@@ -29,6 +34,19 @@
 .page-coming-soon {
   section {
     padding: rem(16) rem(32);
+    // max-width: rem(1024);
+    margin: 0 auto;
+    > * {
+      max-width: rem(1024);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1, h2 {
+      text-wrap: balance;
+    }
+    &:nth-child(2n) {
+      background-color: $medlar;
+    }
   }
 }
 header.header {

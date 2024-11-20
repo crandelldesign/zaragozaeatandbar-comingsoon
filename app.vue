@@ -9,6 +9,7 @@
 <style lang="scss">
 @import "~/assets/scss/root.scss";
 @import "~/assets/scss/reboot.scss";
+@import "~/assets/scss/global.scss";
 
 body #__nuxt {
   min-height: 100%;

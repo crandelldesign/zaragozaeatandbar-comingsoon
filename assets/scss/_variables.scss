@@ -161,6 +161,9 @@ $headings-line-height: 1.2;
 $headings-color: inherit;
 // scss-docs-end headings-variables
 
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: $font-weight-base;
+
 // Options
 $enable-rounded: true;
 $enable-smooth-scroll: true;

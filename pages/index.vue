@@ -44,8 +44,11 @@
     h1, h2 {
       text-wrap: balance;
     }
+    &:not(:last-child) {
+      border-bottom: 2px solid $tomato;
+    }
     &:nth-child(2n) {
-      background-color: $medlar;
+      // background-color: $medlar;
     }
   }
 }
@@ -65,8 +68,8 @@ header.header {
   font-family: $headings-font-family;
   padding: rem(32);
   text-align: center;
-  background-color: $cinder;
-  color: $medlar;
+  background-color: $azure;
+  color: $white;
   svg {
     fill: currentColor;
   }

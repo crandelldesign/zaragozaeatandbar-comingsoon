@@ -54,6 +54,10 @@ $yellow-800: shade-color($yellow, 60%);
 $medlar: #d8d6c1; // Outside the logo
 $tofu: #e8e6d7; // Inside the logo
 $cinder: #040306; // Black in logo
+$eerie: #222222;
+$azure: #007BFF;
+$tomato: #FF5733;
+
 
 // scss-docs-start theme-color-variables
 $primary: $blue;
@@ -71,8 +75,8 @@ $dark: $gray-900;
 // Settings for the `<body>` element.
 
 $body-text-align: null;
-$body-color: $cinder;
-$body-bg: $tofu;
+$body-color: $eerie;
+$body-bg: $white;
 $body-color-dark: $gray-300;
 
 $body-secondary-color: rgba($body-color, .75);

@@ -29,6 +29,8 @@
   --#{$prefix}secondary-bg: #{$body-secondary-bg};
   --#{$prefix}secondary-bg-rgb: #{to-rgb($body-secondary-bg)};
 
+  --#{$prefix}heading-color: #{$headings-color};
+
   --#{$prefix}link-color: #{$link-color};
   --#{$prefix}link-color-rgb: #{to-rgb($link-color)};
   --#{$prefix}link-decoration: #{$link-decoration};

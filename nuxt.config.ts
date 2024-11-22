@@ -42,5 +42,8 @@ export default defineNuxtConfig({
   ],
   aos: {
     once: true
-  }
+  },
+  features: {
+    inlineStyles: false,  
+  },
 })

@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ['@nuxt/eslint', "@nuxtjs/google-fonts"],
+  modules: ['@nuxt/eslint', "@nuxtjs/google-fonts", 'nuxt-aos'],
   eslint: {
     config: {
       stylistic: true, // <---
@@ -40,4 +40,7 @@ export default defineNuxtConfig({
     { path: '~/components/icons', pathPrefix: false },
     '~/components'
   ],
+  aos: {
+    once: true
+  }
 })
